@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/zhuce.css" />
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/zhuce.js"></script>
+  </head>
+  <body onload="createCode()">
+    <div class="bigbox">
+      <div class="header">注册</div>
+
+      <div class="inp">
+      <form action="">
+     <label for="">
+        用户名
+        <input type="text" class="user" id="user-reg"  placeholder="首字为字母至少八位不能有汉字"/></br>
+        <span id="user-error" style="font-size:9px;color: red;"></span>
+        </label>
+        <label for="">
+        密码
+        <input type="password" id="user-pass"  placeholder="首字为字母至少八位不能有汉字"/></br>
+        <span id="user-error1" style="font-size:9px;color: red"></span>
+        </label>
+        <label for="">
+        确认密码
+        <input type="password" class="pas" id="user-pass-1" placeholder="首字为字母至少八位不能有汉字"/></br>
+        <span id="Determine-password-error" style="font-size:9px;color: red"></span>
+        </label>
+       <label for="">
+        邮箱
+        <input type="text" id="user-emal" placeholder="输入正确邮箱格式"/></br>
+        <span id="user-error-email" style="font-size:9px;color: red"></span>
+       </label>
+       <label for="">
+            手机
+      <input type="text" id="user-reg" placeholder="860++"></br>
+      <span id="user-error" style="font-size:9px;color: red"></span>
+    </label>
+
+
+    
+    <div class="yzm">
+        <div class="yzm-p">  
+         <label>验证码：</label> 
+         <div class="code" id="checkCode" onclick="createCode()" ></div><a class="yz"  href="#" onclick="createCode()">看不清换一张</a>
+        </div>
+        
+        <p style="height: 50px;margin-top: 10px">
+         <label class="yz">请输入验证码</label><input id="YZ" name="yz" width="30px;">
+     
+     <input class="btttom"  type="button" name="OK" id="OK" onclick="GetDom()" value="确认"/>
+     </p>
+      </div>
+   
+      
+    <label class="butt">
+        <button >提交</button>
+        <button type="reset" id="res">重置</button>
+    </label>
+        </form>
+    </div>
+
+    
+    </div>
+
+
+ 
+
+  </body>
+</html>

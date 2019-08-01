@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/werwolfkill.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+</head>
+<style>
+    #imgs{
+				overflow: hidden;
+            }
+</style>
+<body>
+    <div id="bigbox">
+      <ul id="imgs">
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li> 
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+      </ul>
+    </div>
+    <div id="butt">
+        <button>确认</button>
+        <button type="button" id="back">返回</button>
+    </div>
+</body>
+<script type="text/javascript">
+
+
+
+
+    
+
+	       var height = $(window).height();
+            $('body').height(height);
+            
+            var aarr = localStorage.getItem('aarr')
+			var bbrr = aarr.split(',')
+			for (var i = 0; i < bbrr.length; i++) {
+           var  image = "<img  src='../imgs/" + bbrr[i] + ".jpg'>";
+                $('#imgs li').append(image);
+				// console.log( $('#imgs li'));
+			}
+			$("#imgs li [src^='../imgs/lr.jpg']").prev().hide();
+			$('#imgs li').click(function() {
+				$('#imgs').css('pointer-events','none')
+				var index = $(this).index();
+				console.log(index);
+				$('#imgs li ').eq(index).children().eq(0).hide();
+				// $(this).append(images)
+			});
+		$('#back').click(function(){
+			location.href='startgame.html'
+    })
+</script>
+</html>

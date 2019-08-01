@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: all 0.3s;
+  }
+  a{
+    text-decoration: none;
+  }
+  body {
+    overflow: hidden;
+    background: url(../img/bg.jpg)no-repeat center;
+     background-size: cover;
+  }
+  .bg{
+      width: 100%;
+      height: 1000px;
+      padding-top: 50px
+  }
+  .BigBox {
+    width: 378px;
+    position: relative;
+  }
+  #Start {
+    width: 200px;
+    height: 56px;
+    margin: 0 auto;
+    background: black;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius:10px
+  }
+  #Start p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 56px;
+    box-shadow: 1px 0px 10px 10px #666666;
+    border-radius:10px
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  ul li {
+    width: 115px;
+    height: 120px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    color: azure;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-radius: 10%;
+  }
+  ul li {
+    position: absolute;
+    top: 70px;
+    left: 122px;
+    opacity: 0;
+    transition: all 0.3s;
+    background: url(../img/bm.jpg)no-repeat center;
+    background-size: cover;
+    border-radius: 10%;
+    
+  }
+  #one{
+   background: url(../img/prophet.jpg)no-repeat center;
+   background-size: cover;
+  }
+  #lr{
+    background: url(../img/lr.jpg)no-repeat center;
+   background-size: cover;
+  }
+  #pm{
+    background: url(../img/pm.jpg)no-repeat center;
+   background-size: cover;
+  }
+  #sw{
+    background: url(../img/sw.jpg)no-repeat center;
+   background-size: cover;
+  }
+  #nw{
+    background: url(../img/witch.jpg)no-repeat center;
+   background-size: cover;
+  }
+  #gamestart{
+    width: 200px;
+    height: 56px;
+    margin: 0 auto;
+    background: black;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius:10px;
+    line-height: 56px;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 90px;
+  }
+  #gamestart a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+  }

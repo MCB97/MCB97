@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+a {
+	text-decoration:none;
+	outline: none;
+
+	}
+.bigbox{
+	width: 100%;
+	height:100%;
+	background:url(../img/timg.jpg)no-repeat center;
+	position: fixed;	
+	background-size:cover;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	color: white;;
+	margin-bottom: 1.25rem;
+	height:3.125rem;
+	line-height: 3.125rem;
+	margin-top: 5px;
+}
+#banner {
+    position: relative;/* 给绝对定位一个位置参考 */
+    width: 100%;
+    height:12.5rem;
+     margin: 0 auto;/*上下 左右 */
+    /* background-color: #3399ff; */
+	margin-bottom: 3.125rem;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#banner .item{
+    display: none;
+    position: absolute;/*绝对定位，脱离了文档流*/
+    /* 如果你的父级元素 */
+    top: 0;
+    left: 0;
+}
+.img-wrap img{
+	width:100%;
+  height: 12.25rem;
+	display:inline-block;
+	opacity:0.8;
+	border: #555555 5px solid;
+}
+.butt{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2.5rem;
+}
+.butt button{
+	width: 6.25rem;
+	height: 1.875rem;
+	background: #555555;
+	font-weight: bold;
+	outline: none;
+
+}
+.icon-tubiao{
+    margin-left:0.625rem;
+}
+.icon-shengyin-copy{
+	margin-right: 0.625rem;
+}
+form{
+    margin-bottom: 1.25rem;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+}
+input{  
+     width: 12.5rem;
+    height:1.875rem;
+    text-indent: .3125rem;
+    border-radius:10px;
+    outline: none;
+    border:black;
+    margin-left: 2rem;
+}
+.user{
+	margin-left: 1rem;
+}
+label{
+	height: 3.3125rem;
+	display: inline-block;
+	margin-bottom: 1.875rem;
+}

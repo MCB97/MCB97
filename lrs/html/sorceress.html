@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/werwolfkill.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div id="bigbox">
+      <ul id="imgs">
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li> 
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+          <li><img src="../img/fengmian.jpg"></li>
+      </ul>
+    </div>
+    <div id="butt">
+      <label><input type="radio">解药</label> 
+      <label><input type="radio" id="du">毒药</label>
+      <label><input type="radio" id="nothing">什么都不做</label>
+    <div style="margin-top: 10px">
+        <button id="queding">确定</button>
+        <button id="back">返回</button>
+    </div>
+    </div>
+</body>
+<script>
+    var arr = JSON.parse(localStorage.getItem("xx")) 
+    console.log(arr)
+    $.each(arr,function (index,element){
+			if(element == "nw"){
+				$($("img")[index]).after(`<img src="../img/witch.jpg" alt="">`);
+                $($("img")[index]).remove();
+            }
+            })
+            $('#imgs img').click(function() {
+				$('button').css('background', 'green')
+			})
+
+			$('#nothing').click(function() {
+				$('#queding').css('background', 'green')
+				$('#back').css('background', 'green')
+                    })
+            $("li").click(function(){
+            var index = $(this).index()   
+            $('#du').click(function(){
+				$($("img")[index]).after(`<img src="../img/daoguang.gif" alt="">`);	
+                $($("img")[index]).remove();
+                
+			})
+        });
+        $("#back").click(function(){
+            $(location).attr('href','../html/startgame.html')
+        })
+</script>
+</html>
